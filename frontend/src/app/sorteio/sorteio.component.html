@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="card">
+    <h2>Seus números da sorte</h2>
+
+    <div class="numeros" *ngIf="numeros.length > 0">
+      <span class="numero" *ngFor="let n of numeros">{{ n }}</span>
+    </div>
+
+    <p class="dica" *ngIf="numeros.length === 0">Clique em sortear para gerar seus números!</p>
+
+    <button class="btn-sortear" (click)="sortear()" [disabled]="carregando">
+      {{ carregando ? 'Sorteando...' : 'Sortear' }}
+    </button>
+
+    <button class="btn-voltar" (click)="voltar()">← Voltar</button>
+  </div>
+</div>

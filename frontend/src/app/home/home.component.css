@@ -1,0 +1,128 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 32px 16px;
+  gap: 20px;
+}
+
+.logo-img {
+  width: 180px;
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.4));
+}
+
+.card {
+  background: white;
+  border-radius: 28px;
+  padding: 48px 40px 36px;
+  text-align: center;
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.35);
+  max-width: 400px;
+  width: 90%;
+}
+
+.loto-img {
+  width: 100%;
+  max-width: 260px;
+  margin-bottom: 24px;
+}
+
+.divider {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(135deg, #A7348B, #e879c0);
+  border-radius: 2px;
+  margin: 0 auto 24px;
+}
+
+.subtitulo {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 36px;
+}
+
+.subtitulo strong {
+  color: #A7348B;
+}
+
+button {
+  background: #A7348B;
+  color: white;
+  border: none;
+  padding: 18px 0;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(167, 52, 139, 0.4);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(167, 52, 139, 0.5);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(167, 52, 139, 0.3);
+}
+
+.rodape {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #bbb;
+  letter-spacing: 0.5px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .logo-img {
+    width: 150px;
+  }
+
+  .card {
+    padding: 36px 28px 28px;
+  }
+
+  .loto-img {
+    max-width: 220px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 24px 12px;
+    gap: 16px;
+  }
+
+  .logo-img {
+    width: 120px;
+  }
+
+  .card {
+    padding: 28px 20px 24px;
+    border-radius: 20px;
+  }
+
+  .loto-img {
+    max-width: 180px;
+    margin-bottom: 16px;
+  }
+
+  .subtitulo {
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+
+  button {
+    font-size: 15px;
+    padding: 16px 0;
+  }
+}

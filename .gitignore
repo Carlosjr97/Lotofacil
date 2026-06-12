@@ -1,0 +1,20 @@
+# Backend - Spring Boot
+backend/target/
+backend/.mvn/
+backend/*.class
+backend/*.jar
+backend/*.war
+
+# Frontend - Angular
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+*.iml
+.vscode/

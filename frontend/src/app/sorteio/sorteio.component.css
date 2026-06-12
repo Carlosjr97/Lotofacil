@@ -1,0 +1,170 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 32px 16px;
+}
+
+.card {
+  background: white;
+  border-radius: 24px;
+  padding: 48px 40px;
+  text-align: center;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.25);
+  max-width: 500px;
+  width: 90%;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #A7348B;
+  margin-bottom: 32px;
+}
+
+.numeros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.numero {
+  background: #A7348B;
+  color: white;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(167, 52, 139, 0.35);
+  flex-shrink: 0;
+}
+
+.dica {
+  color: #aaa;
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+
+.btn-sortear {
+  background: #3C3C3C;
+  color: white;
+  border: none;
+  padding: 14px 0;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-sortear:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.btn-sortear:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.btn-sortear:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-voltar {
+  background: #A7348B;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+  box-shadow: 0 4px 16px rgba(167, 52, 139, 0.35);
+}
+
+.btn-voltar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(167, 52, 139, 0.45);
+}
+
+.btn-voltar:active {
+  transform: translateY(0);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .card {
+    padding: 36px 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .numero {
+    width: 48px;
+    height: 48px;
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 12px;
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+
+  .card {
+    padding: 28px 20px;
+    border-radius: 20px;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .numeros {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .numero {
+    width: 44px;
+    height: 44px;
+    font-size: 15px;
+  }
+
+  .dica {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .btn-sortear {
+    font-size: 16px;
+    padding: 14px 0;
+  }
+
+  .btn-voltar {
+    font-size: 15px;
+    padding: 12px 0;
+  }
+}
