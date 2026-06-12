@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class LotofacilService {
 
-  private apiUrl = 'https://lotofacil-0y5x.onrender.com';
+  private apiUrl = 'https://lotofacil-0y5x.onrender.com/api/sortear';
 
   constructor(private http: HttpClient) {}
 
