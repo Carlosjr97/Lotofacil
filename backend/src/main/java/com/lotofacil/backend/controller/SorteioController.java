@@ -13,7 +13,7 @@ import java.util.List; // Estou importando a interface List, que representa uma 
 
 @RestController // Estou avisando ao Spring que sou um Controller REST.
 @RequestMapping("/api") // Estou definindo que todas as minhas rotas começam com /api
-@CrossOrigin(origins = "http://localhost:4200") // Estou permitindo que o Angular rodando em localhost:4200 possa fazer requisições para mim.
+@CrossOrigin(origins = {"http://localhost:4200", "https://carlosjr97.github.io"}) // Permitindo localhost e GitHub Pages
 public class SorteioController { // Eu sou uma classe pública chamada SorteioController
 
     private final SorteioService sorteioService; // Eu possuo uma referência para um objeto SorteioService
